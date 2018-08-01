@@ -41,7 +41,6 @@ def click(event):
         error=0
  
         for i in range(no_of_items):
-            #print "Debug"
             try:
                 product=amazon.lookup(ItemId=str(idno[i])) 
                 title.append(product.title)
