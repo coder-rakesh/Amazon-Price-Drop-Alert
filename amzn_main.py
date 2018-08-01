@@ -9,11 +9,11 @@ import tkMessageBox
 idno=[]
 
 #data for authorization for sending message 
-account_sid="ACb2a7534e1d84c28169f5b13bb7764745"
-auth_token="787b63f2b13c95adf4fb70c5f247931a"
-my_no="9077174834"#your phone no
+account_sid="##########################"
+auth_token="##########################"
+my_no="#########"#your phone no
 
-amazon= AmazonAPI("AKIAJIUJ43R4FVJQFV7Q", "qu/VBpLKHRBe/p+leDjuY0RE39cNCGmuqfdd+/Sm", "rakeshamazona-20")
+amazon = AmazonAPI(AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_ASSOC_TAG)
 
 #sends the "text" as a message to your phone
 def sendmsg(text):
