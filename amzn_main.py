@@ -19,7 +19,7 @@ amazon = AmazonAPI(AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_ASSOC_TAG)
 def sendmsg(text):
     try:    
         client = Client(account_sid, auth_token)
-        message = client.messages.create(to=my_no, from_="+16194040245",body=text)
+        message = client.messages.create(to=my_no, from_="###########",body=text)
     except Exception as e:
          msg="Sorry could not send message due to %s"%((type(e).__name__))
          tkMessageBox.showinfo("Oops!",msg)
